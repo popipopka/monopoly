@@ -57,6 +57,8 @@ public class ObjectsListGUI extends ScrollPane implements Updated {
 
             Label name = new Label(cell.getName());
             name.getStyleClass().add("underline");
+            name.setMinWidth(LIST_ITEM_WIDTH.get() * 0.3);
+            name.setMaxWidth(LIST_ITEM_WIDTH.get() * 0.3);
 
             this.getChildren().addAll(
                     GUIUtil.createRect(OBJ_LIST_ITEM_RECT_SIZE.get(), OBJ_LIST_ITEM_RECT_SIZE.get(), cell.getColor()),
