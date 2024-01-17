@@ -100,6 +100,6 @@ public class CellAvatar extends HBox implements Updated {
     @Override
     public void update() {
         if (this.cell.isOwned()) setOwnerIcon();
-        this.levelValue.setText(": " + this.cell.getLevel());
+        if(CellUtil.isObject(this.cell)) this.levelValue.setText(": " + this.cell.getLevel());
     }
 }

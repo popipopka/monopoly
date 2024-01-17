@@ -20,6 +20,7 @@ public class MonopolyApplication extends Application {
         stage.show();
     }
 
+    //TODO не давать возможность ходить игрокам, которые наступили на объект, у которого есть собственник
     public static void main(String[] args) {
         launch();
     }
