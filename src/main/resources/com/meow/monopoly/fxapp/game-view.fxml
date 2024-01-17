@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane fx:id="rootPanel" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.meow.monopoly.fxapp.MonopolyController">
+
+    <right>
+        <VBox fx:id="controlBoard" alignment="CENTER" styleClass="control">
+
+            <HBox>
+                <VBox>
+                    <BorderPane fx:id="sellPane">
+                        <left>
+                            <TextField fx:id="sellInputField"/>
+                        </left>
+                        <right>
+                            <Button fx:id="sellBtn" onAction="#onClickSellBtn" mnemonicParsing="false"/>
+                        </right>
+                    </BorderPane>
+                    <Button fx:id="upgradeBtn" onAction="#onClickUpgradeBtn" mnemonicParsing="false" text="Upgrade"/>
+                </VBox>
+                <VBox alignment="CENTER">
+                    <Button fx:id="buyBtn" onAction="#onClickBuyBtn" mnemonicParsing="false" text="Buy"/>
+                    <Button fx:id="rentBtn" onAction="#onClickRentBtn" mnemonicParsing="false" text="Rent"/>
+                </VBox>
+            </HBox>
+            <HBox alignment="CENTER">
+                <Button fx:id="nextTurnBtn" mnemonicParsing="false" onAction="#onClickNextTurnBtn"
+                        text="Next turn"/>
+            </HBox>
+        </VBox>
+    </right>
+</BorderPane>
