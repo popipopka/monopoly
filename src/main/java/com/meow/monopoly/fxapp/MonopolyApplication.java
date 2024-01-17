@@ -21,6 +21,8 @@ public class MonopolyApplication extends Application {
     }
 
     //TODO не давать возможность ходить игрокам, которые наступили на объект, у которого есть собственник
+    //TODO реализовать функционал для COMPANY и ячеек, рента за которые зависит от выпавшего на кубике числа
+    //TODO проверить работу метода getOutJail в классе Prison
     public static void main(String[] args) {
         launch();
     }
